@@ -1,10 +1,15 @@
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Profile from "./pages/Profile";
+import Matches from "./pages/Matches";
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-100">
-      <h1 className="text-3xl font-bold text-purple-600">
-        Study Group Matchmaker
-      </h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/profile" element={<Profile />} />
+      <Route path="/matches" element={<Matches />} />
+    </Routes>
   );
 }
 
