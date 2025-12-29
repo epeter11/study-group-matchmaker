@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import AvailabilityGrid from "../components/AvailabilityGrid";
 
 function Profile() {
   return (
@@ -9,6 +10,9 @@ function Profile() {
       <p className="text-gray-600">
         Match with students based on classes, availability, and study preferences.
       </p>
+
+      <AvailabilityGrid />
+      
     </Layout>
   );
 }
