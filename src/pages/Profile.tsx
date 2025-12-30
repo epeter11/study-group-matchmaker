@@ -1,18 +1,21 @@
 import Layout from "../components/Layout";
+import ProfileForm from "../components/ProfileForm";
 import AvailabilityGrid from "../components/AvailabilityGrid";
 
 function Profile() {
   return (
     <Layout>
-      <h1 className="text-3xl font-bold mb-4">
-        Find Your Perfect Study Group
-      </h1>
-      <p className="text-gray-600">
-        Match with students based on classes, availability, and study preferences.
+      <h1 className="text-2xl font-bold mb-2">Your Profile</h1>
+      <p className="text-gray-600 mb-6">
+        Tell us about yourself so we can find the best study matches.
       </p>
 
-      <AvailabilityGrid />
-      
+      <ProfileForm />
+
+      <div className="mt-10">
+        <h2 className="text-xl font-semibold mb-4">Availability</h2>
+        <AvailabilityGrid />
+      </div>
     </Layout>
   );
 }
